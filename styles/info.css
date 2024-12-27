@@ -1,0 +1,36 @@
+.info {
+    margin-top: 30px;
+    background-color: #eee;
+}
+
+.info .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px 0;
+    padding: 30px 15px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+}
+
+.info-item__img {
+    width: 40px;
+    float: left;
+    margin-right: 20px;
+}
+
+.info-item__description {
+    color: var(--text-color);
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media (width >= 768px) {
+    .info .container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0 30px;
+    }
+}
